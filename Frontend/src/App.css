@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+main .left,
+main .right{
+  height: 100%;
+  flex-basis: 40%;
+  border-radius: 0.7rem;
+}
+
+main .left{
+  background-color: black;
+  position: relative;
+}
+
+.left .code, .code pre, .code pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(17, 17, 17);
+  border-radius: 0.7rem;
+ 
+}
+
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(161, 157, 245);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.7rem;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+main .right{
+  background-color: rgb(51, 51, 95);
+  padding: 1.4rem 2.8rem;
+  overflow: auto;
+  flex-basis: 60%;
+}
